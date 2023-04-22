@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="inputText" parent="Theme.MaterialComponents.Light.NoActionBar">
+        
+        <item name="background">@color/blue1</item>
+
+        
+    </style>
+
+</resources>
