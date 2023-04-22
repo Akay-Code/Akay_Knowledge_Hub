@@ -11,7 +11,7 @@
 
     <LinearLayout
         android:id="@+id/layout1"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -54,7 +54,7 @@
 
     <LinearLayout
         android:id="@+id/layout2"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -94,7 +94,7 @@
 
     <LinearLayout
         android:id="@+id/layout3"
-        android:layout_marginTop="80dp"
+        android:layout_marginTop="40dp"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:orientation="horizontal"
@@ -124,6 +124,44 @@
             android:background="@color/teal_200"
             android:textColor="@color/black"
             android:text="Linear \nLayouts"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:weightSum="2"
+        >
+
+        <Button
+            android:id="@+id/btnSign"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Sign In"
+            android:background="@color/teal_200"
+            android:textColor="@color/black"
+            android:layout_margin="10dp"
+            android:textStyle="bold"
+            android:textSize="15dp"
+            />
+
+        <Button
+            android:id="@+id/button8"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/teal_200"
+            android:textColor="@color/black"
+            android:text="Button 8"
             android:layout_margin="10dp"
             android:textStyle="bold"
             android:textSize="15dp"

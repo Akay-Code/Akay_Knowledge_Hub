@@ -62,5 +62,13 @@ class MainActivity2 : AppCompatActivity() {
             val intent = Intent(applicationContext , ActivityLayout::class.java)
             startActivity(intent)
         }
+
+        val btnSign = findViewById<Button>(R.id.btnSign)
+
+        btnSign.setOnClickListener{
+            val intent = Intent(this, ActivitySignIn::class.java)
+            startActivity(intent)
+        }
+
     }
 }
