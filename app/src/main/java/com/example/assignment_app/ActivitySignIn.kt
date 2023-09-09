@@ -15,7 +15,7 @@ class ActivitySignIn : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_sign_in)
 
-//        //declaring variables
+        //declaring variables
         val signup = findViewById<Button>(R.id.btnSignUp)
 
         val loginId = findViewById<com.google.android.material.textfield.TextInputEditText>(R.id.inputloginID)
@@ -38,12 +38,13 @@ class ActivitySignIn : AppCompatActivity() {
 
             //adding the user to the database
             database.child(id).setValue(user).addOnSuccessListener {
-                //generate a toast message of success addition to database
+                //clearing all fields
                 loginId.text?.clear()
                 ipName.text?.clear()
                 ipEmail.text?.clear()
                 ipPassword.text?.clear()
 
+                //generate a toast message of success addition to database
                 Toast.makeText(this, "User Added", Toast.LENGTH_SHORT).show()
             }.addOnFailureListener{
                 //generate a toast message of failure addition to database
